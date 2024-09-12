@@ -1,3 +1,39 @@
+:root{
+    --green:#16a085;
+    --white: white;
+    --black: #444;
+    --light-color: #111;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .2rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 5%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
 body{
     background-color: #ffffff;
     margin: 0;
@@ -5,11 +41,21 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
+    display: flex;
     background: url("img/Real\ tech.jpg");
     text-align: center;
-    padding: 20px 0;
+    padding: 1px 0;
+    
 }
 
+p {
+    text-align: justify;
+    font-size: 20px;
+    font-style: italic;
+    gap: 2rem;
+    margin-top: 15rem;
+
+}
 
 ul{
     list-style: none;
@@ -24,20 +70,28 @@ li {
     font-weight: bold;
     
 }
+.heading{
+    display: flex;
+    justify-content: center;
+}
 
 a {
    text-decoration: none;/* Removes the underline from the tags */
 }
 
 h1 {
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 36px;
-    color: #ffffff;
+    align-items: center;
+    padding-bottom: 1rem;
+    text-shadow: var(--text-shadow);
     text-transform: uppercase;
-    text-align: center;
-    font-family:cursive;
+    color: var(--white);
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    font-weight: bold;
+
 }
+
+
 nav{
 background-color: #333;
 text-align: center;
@@ -96,3 +150,91 @@ background-color: #333;
 .pagination .next {
     float: right;
 }
+
+.intro{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+.intro .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.intro .row .picture-container {
+    flex: 1 1 45rem;
+}
+
+.intro .row .picture-container img {
+    width: 100%;
+}
+
+.intro .row .content {
+    flex: 1 1 40rem;
+}
+
+.intro .row .content h3{
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 5rem;
+    line-height: 1.5;
+}
+
+.intro .row .content p{
+    color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    gap: 5rem;
+}
+
+h4{
+    color:rgb(25, 0, 255);
+    font-size: 18px;
+    padding: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+.intro .row .content a {
+    color: rgb(43, 226, 226);
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: Poppins;
+}
+
+.intro .row .content a:hover {
+    background-color: blue;
+}
+
+.animated-text {
+  opacity: 0; /* initial opacity is 0, making the text invisible */
+  animation: appear 2s forwards infinite; /* animation name, duration, and fill-mode */
+  animation-delay: 1s; /* delay the animation by 0.5 seconds */
+}
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @media (max-width:656px) {
+    html{ 
+        
+            font-size: 10px;
+
+        }
+        
+  }
