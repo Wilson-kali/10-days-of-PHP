@@ -2,7 +2,7 @@
 ## "The quiter you become, the more you are able to hear"
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=scriptkiddieke&label=Profile%20views&color=ED8B00&style=flat" alt="10 days of PHP" /> </p>
 
-```javascript
+```go
 // - Fun fact: Every day is a school to learn something new.
 // - Welcome to my world
 
