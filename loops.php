@@ -49,11 +49,10 @@ echo" Create a script that displays 1-2-3-4-5-6-7-8-9-10 on one line.<br>";
 
  // SIMPLE EXAMPLE 4
  // Create a script to construct the following pattern, using nested for loop.
-echo"A script to construct the following pattern, using nested for loop.";
-for ($x= 1;$x<= 5;$x++) {
-    for ($j= 1;$j<=$x;$j++) {
+echo"A script to construct the following pattern, using nested for loop.<br>";
 
-    }
+for ($x= 1;$x<= 5;$x++) {
+    echo "*<br>";
     
 } 
 ?>
