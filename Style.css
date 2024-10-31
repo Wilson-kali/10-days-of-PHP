@@ -1,242 +1,51 @@
-:root{
-    --green:#16a085;
-    --white: white;
-    --black: #444;
-    --light-color: #111;
-    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
-    --text-shadow: .2rem .4rem 0 rgba(0, 0, 0, .2);
-    --border: .2rem solid var(--green);
-}
-
-*{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition: all .2s ease-out;
-    text-decoration: none;
-}
-
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-}
-
-section{
-    padding: 2rem 5%;
-}
-
-section:nth-child(even){
-    background: #f5f5f5;
-}
-body{
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-header {
-    display: flex;
-    background: url("img/Real\ tech.jpg");
-    text-align: center;
-    padding: 1px 0;
-    
-}
-
-p {
-    text-align: justify;
-    font-size: 20px;
-    font-style: italic;
-    gap: 2rem;
-    margin-top: 2rem;
-    font-weight: 600;
-
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Displays items horizontally*/
-    flex-wrap: wrap;
-
-}
-li {
-    margin-right: 20px ;
-    font-weight: bold;
-    
-}
-.heading{
-    display: flex;
-    justify-content: center;
-}
-
-a {
-   text-decoration: none;/* Removes the underline from the tags */
+    padding: 20px;
 }
 
 h1 {
-    align-items: center;
-    padding-bottom: 1rem;
-    text-shadow: var(--text-shadow);
-    text-transform: uppercase;
-    color: var(--white);
-    font-size: 5rem;
-    letter-spacing: .5rem;
-    font-weight: bold;
-
-}
-
-
-nav{
-background-color: #333;
-text-align: center;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    display: inline-block;
-}
-
-nav ul li a img {
-    vertical-align: middle;
-    margin-right: 15px;
-    width: 30px;
-    height: 30px;
-}
-
-nav ul li a:hover {
-    background-color: grey;
-    border-radius: 15px;
-}
-.pagination {
     text-align: center;
-    margin: 20px 0;
+    color: #1f1f1f;
 }
 
-.pagination a {
-    text-decoration: none;
-    background-color: grey;
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-weight: bold;
-}
-
-.pagination a:hover {
-background-color: #333;
-}
-.pagination .prev {
-    float: left;
-}
-
-.pagination .next {
-    float: right;
-}
-
-.intro{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding-top: 3rem;
-}
-.intro .row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-}
-
-.intro .row .picture-container {
-    flex: 1 1 45rem;
-}
-
-.intro .row .picture-container img {
+table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.intro .row .content {
-    flex: 1 1 40rem;
+table, th, td {
+    border: 1px solid #ddd;
 }
 
-.intro .row .content h3{
-    color: var(--black);
-    text-shadow: var(--text-shadow);
-    font-size: 5rem;
-    line-height: 1.5;
+th, td {
+    padding: 12px;
+    text-align: left;
 }
 
-.intro .row .content p{
-    color: var(--light-color);
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    line-height: 1.8;
-    gap: 5rem;
+th {
+    background-color: #f4f4f4;
 }
 
-h4{
-    color:rgb(25, 0, 255);
-    font-size: 18px;
-    padding: 2rem;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 10rem;
-  
-}
-
-.intro .row .content a {
-    color: rgb(43, 226, 226);
+a {
+    color: #1f4ea5;
     text-decoration: none;
-    font-size: 18px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: grey;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #1f4ea5;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
-    border-radius: 15px;
-    font-family: Poppins;
+    cursor: pointer;
 }
 
-.intro .row .content a:hover {
-    background-color: blue;
+button:hover {
+    background-color: #133a83;
 }
-
-.animated-text {
-  opacity: 0; /* initial opacity is 0, making the text invisible */
-  animation: appear 2s forwards infinite; /* animation name, duration, and fill-mode */
-  animation-delay: 1s; /* delay the animation by 0.5 seconds */
-}
-  
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @media (max-width:656px) {
-    html{ 
-        
-            font-size: 10px;
-
-        }
-        
-  }
