@@ -9,7 +9,7 @@
 WilsonKali := Coding 10 days with PHP{
     about: about{
         name: "Wilson Ndambuki",
-        Motivation: "Get help from sratch",
+        Motivation: "Get help from scratch",
         Collaboration: "Open to Collaboration",
     },
     HELP: []string{"Facebook", "Twitter", "WhatsApp", "Linkedln" },
